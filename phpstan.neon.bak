@@ -1,0 +1,14 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+parameters:
+    level: max
+    paths:
+         - app
+    reportUnmatchedIgnoredErrors: false
+    excludes_analyse:
+        - resources
+        - .phpcs.php
+        - tests
+        - tests/Feature
+        - tests/Unit
+        - /*/*/console.php
